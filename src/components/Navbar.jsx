@@ -28,11 +28,15 @@ export default function Navbar() {
       </button>
 
       <div className={`nav-links ${menuOpen ? "active" : ""}`}>
-        <Link to="/#servicios" onClick={closeMenu}>Servicios</Link>
-        <Link to="/#trainers" onClick={closeMenu}>Entrenadores</Link>
-        <Link to="/#comentarios" onClick={closeMenu}>Comentarios</Link>
-        <Link to="/#location" onClick={closeMenu}>Ubicación</Link>
+        <Link to="/" onClick={closeMenu}>Inicio</Link>
         <Link to="/about" onClick={closeMenu}>¿Quiénes somos?</Link>
+        
+        {/* TUS SECCIONES AQUÍ */}
+        <Link to="/team" onClick={closeMenu}>Nuestro Equipo</Link>
+        <Link to="/gallery" onClick={closeMenu}>Galería</Link>
+        
+        <Link to="/Team" onClick={closeMenu}>Team</Link>
+        
         <a
           href="https://wa.me/50499015521?text=Hola!%20Quiero%20información%20sobre%20BodyPerfectGym"
           className="nav-wha"
