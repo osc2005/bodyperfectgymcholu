@@ -35,8 +35,6 @@ export default function Navbar() {
         <Link to="/team" onClick={closeMenu}>Nuestro Equipo</Link>
         <Link to="/gallery" onClick={closeMenu}>Galería</Link>
         
-        <Link to="/Team" onClick={closeMenu}>Team</Link>
-        
         <a
           href="https://wa.me/50499015521?text=Hola!%20Quiero%20información%20sobre%20BodyPerfectGym"
           className="nav-wha"

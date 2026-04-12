@@ -6,11 +6,12 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Taekwondo from "./pages/Taekwondo";
 import Services from "./pages/Services";
-import Schedule from "./pages/Shedule";
+import Schedule from "./pages/Shedule"; 
 import Pricing from "./pages/Pricing";
 import Team from "./pages/Team";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import TeamDetail from "./pages/TeamDetail"; 
 
 import "./Global.css";
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/team/:id" element={<TeamDetail />} />
       </Routes>
       <Footer />
     </BrowserRouter>
