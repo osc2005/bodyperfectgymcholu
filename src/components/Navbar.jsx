@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,6 +35,7 @@ export default function Navbar() {
         {/* TUS SECCIONES AQUÍ */}
         <Link to="/team" onClick={closeMenu}>Nuestro Equipo</Link>
         <Link to="/gallery" onClick={closeMenu}>Galería</Link>
+        <Link to="/schedule" onClick={closeMenu}>Horarios</Link>
         
         <a
           href="https://wa.me/50499015521?text=Hola!%20Quiero%20información%20sobre%20BodyPerfectGym"
